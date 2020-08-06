@@ -1,0 +1,18 @@
+<view>
+	<view class="{{isScroll?'con_top':''}}" id="fixedBox">
+		<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+	</view> 
+	<view style="height:{{fixedHeight}}" hidden="{{!isScroll}}"></view>
+	<view>
+		<block wx:if="{{list.length > 0 }}" wx:for="{{list}}" wx:key="index">
+			<view style="padding:20rpx">11</view>
+		</block>
+		<van-loading size="24px" custom-class="tyb_loading" wx:if="{{isShowLoading}}">加载中...</van-loading>
+		<product-nodata is_show="{{list.length == 0}}"></product-nodata>
+		<view wx:if="{{isEnd}}" class="isEndText">
+			已全部加载
+		</view> 
+	</view>  
+</view>
+  
+

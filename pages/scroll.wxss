@@ -1,0 +1,37 @@
+
+.con_top{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  } 
+    .sort_box{ 
+        margin-left: 35rpx;
+        margin-top: 10rpx;
+        margin-bottom: 10rpx;
+        color:var(--color-primary);
+    }
+  
+    .arrow{
+      transform: rotate(90deg);
+      color:var(--color-primary);
+    }
+  
+    .van-dropdown-menu{
+      height: 70rpx!important;
+    }
+  
+    .van-dropdown-menu__item{
+      justify-content: left!important;
+      padding-left: 18rpx!important;
+      border-bottom: 2rpx solid #f4f4f4;
+    }
+    .van-dropdown-menu__title{
+      color:#588aed!important;
+    }
+    .van-dropdown-item__title{
+      font-size: 28rpx;
+    }
+  
+   
